@@ -8,9 +8,6 @@ Este laboratorio tiene como objetivo practicar el uso de Git y GitHub, incluyend
 
 ## Comandos utilizados
 
-### Configuración inicial
-git config --global user.name "Tu Nombre"
-git config --global user.email "Tu correo"
 
 ### Inicialización del repositorio
 git init
