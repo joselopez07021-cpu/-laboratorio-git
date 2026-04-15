@@ -4,61 +4,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Git y GitHub</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    <div class="page-shell">
+    <div class="page-shell container-xl">
         <header class="hero">
-            <nav class="topbar">
-                <div class="brand">Laboratorio 2</div>
-                <div class="nav-pill">Guia visual de control de versiones</div>
+            <nav class="navbar navbar-expand-lg topbar navbar-dark">
+                <div class="container-fluid px-0">
+                    <a class="navbar-brand brand" href="#">Laboratorio 2</a>
+                    <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false"
+                        aria-label="Mostrar navegacion">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="mainNav">
+                        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#conceptos">Conceptos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#flujo">Flujo</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#practicas">Buenas practicas</a>
+                            </li>
+                            <li class="nav-item">
+                                <span class="nav-pill">Guia visual de control de versiones</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
 
-            <section class="hero-grid">
-                <div class="hero-copy">
-                    <span class="eyebrow">Git + GitHub</span>
-                    <h1>Controla cambios, colabora mejor y publica tu trabajo con confianza.</h1>
-                    <p class="lead">
-                        Git registra la historia de tu proyecto y GitHub la convierte en una
-                        plataforma de trabajo compartido, revision de codigo y publicacion.
-                    </p>
+            <section class="row g-4 hero-grid">
+                <div class="col-lg-7">
+                    <div class="hero-copy h-100">
+                        <span class="eyebrow">Git + GitHub</span>
+                        <h1>Controla cambios, colabora mejor y publica tu trabajo con confianza.</h1>
+                        <p class="lead">
+                            Git registra la historia de tu proyecto y GitHub la convierte en una
+                            plataforma de trabajo compartido, revision de codigo y publicacion.
+                        </p>
 
-                    <div class="hero-actions">
-                        <a class="button button-primary" href="#conceptos">Ver conceptos</a>
-                        <a class="button button-secondary" href="#flujo">Explorar flujo</a>
+                        <div class="hero-actions">
+                            <a class="button button-primary" href="#conceptos">Ver conceptos</a>
+                            <a class="button button-secondary" href="#flujo">Explorar flujo</a>
+                        </div>
                     </div>
                 </div>
 
-                <aside class="hero-card">
-                    <div class="terminal-bar">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                    <pre><code>git init
+                <aside class="col-lg-5">
+                    <div class="hero-card h-100">
+                        <div class="terminal-bar">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <pre><code>git init
 git add .
 git commit -m "Primer avance"
 git branch -M main
 git remote add origin URL
 git push -u origin main</code></pre>
+                    </div>
                 </aside>
             </section>
         </header>
 
         <main class="content">
-            <section class="info-strip">
-                <article>
-                    <strong>Git</strong>
-                    <p>Sistema de control de versiones distribuido para guardar y comparar cambios.</p>
-                </article>
-                <article>
-                    <strong>GitHub</strong>
-                    <p>Plataforma en la nube para alojar repositorios, colaborar y revisar codigo.</p>
-                </article>
-                <article>
-                    <strong>Equipo</strong>
-                    <p>Facilita ramas, fusion de cambios, historial claro y trabajo paralelo.</p>
-                </article>
+            <section class="row g-3 info-strip">
+                <div class="col-md-4">
+                    <article>
+                        <strong>Git</strong>
+                        <p>Sistema de control de versiones distribuido para guardar y comparar cambios.</p>
+                    </article>
+                </div>
+                <div class="col-md-4">
+                    <article>
+                        <strong>GitHub</strong>
+                        <p>Plataforma en la nube para alojar repositorios, colaborar y revisar codigo.</p>
+                    </article>
+                </div>
+                <div class="col-md-4">
+                    <article>
+                        <strong>Equipo</strong>
+                        <p>Facilita ramas, fusion de cambios, historial claro y trabajo paralelo.</p>
+                    </article>
+                </div>
             </section>
 
             <section class="section" id="conceptos">
@@ -67,23 +101,31 @@ git push -u origin main</code></pre>
                     <h2>Lo esencial que debes conocer</h2>
                 </div>
 
-                <div class="card-grid">
-                    <article class="card">
-                        <h3>Repositorio</h3>
-                        <p>Es la carpeta del proyecto con su historial de versiones, ramas y commits.</p>
-                    </article>
-                    <article class="card">
-                        <h3>Commit</h3>
-                        <p>Es una captura de cambios con mensaje descriptivo para dejar evidencia del avance.</p>
-                    </article>
-                    <article class="card">
-                        <h3>Branch</h3>
-                        <p>Permite trabajar nuevas ideas o funciones sin afectar la rama principal.</p>
-                    </article>
-                    <article class="card">
-                        <h3>Pull Request</h3>
-                        <p>En GitHub sirve para proponer cambios, revisarlos y aprobarlos antes de unirlos.</p>
-                    </article>
+                <div class="row g-3 card-grid">
+                    <div class="col-md-6">
+                        <article class="card h-100">
+                            <h3>Repositorio</h3>
+                            <p>Es la carpeta del proyecto con su historial de versiones, ramas y commits.</p>
+                        </article>
+                    </div>
+                    <div class="col-md-6">
+                        <article class="card h-100">
+                            <h3>Commit</h3>
+                            <p>Es una captura de cambios con mensaje descriptivo para dejar evidencia del avance.</p>
+                        </article>
+                    </div>
+                    <div class="col-md-6">
+                        <article class="card h-100">
+                            <h3>Branch</h3>
+                            <p>Permite trabajar nuevas ideas o funciones sin afectar la rama principal.</p>
+                        </article>
+                    </div>
+                    <div class="col-md-6">
+                        <article class="card h-100">
+                            <h3>Pull Request</h3>
+                            <p>En GitHub sirve para proponer cambios, revisarlos y aprobarlos antes de unirlos.</p>
+                        </article>
+                    </div>
                 </div>
             </section>
 
@@ -125,28 +167,37 @@ git push -u origin main</code></pre>
                 </div>
             </section>
 
-            <section class="section tips">
+            <section class="section tips" id="practicas">
                 <div class="section-heading">
                     <span class="section-tag">Buenas practicas</span>
                     <h2>Consejos para trabajar mejor</h2>
                 </div>
 
-                <div class="tips-grid">
-                    <article class="tip-card">
-                        <h3>Haz commits pequenos</h3>
-                        <p>Es mas facil entender, revisar y revertir cambios cuando cada commit tiene un objetivo claro.</p>
-                    </article>
-                    <article class="tip-card">
-                        <h3>Escribe buenos mensajes</h3>
-                        <p>Un mensaje corto y preciso ayuda a comprender el historial del proyecto rapidamente.</p>
-                    </article>
-                    <article class="tip-card">
-                        <h3>Usa ramas por tarea</h3>
-                        <p>Separar funcionalidades evita conflictos y mantiene estable la rama principal.</p>
-                    </article>
+                <div class="row g-3 tips-grid">
+                    <div class="col-md-4">
+                        <article class="tip-card h-100">
+                            <h3>Haz commits pequenos</h3>
+                            <p>Es mas facil entender, revisar y revertir cambios cuando cada commit tiene un objetivo claro.</p>
+                        </article>
+                    </div>
+                    <div class="col-md-4">
+                        <article class="tip-card h-100">
+                            <h3>Escribe buenos mensajes</h3>
+                            <p>Un mensaje corto y preciso ayuda a comprender el historial del proyecto rapidamente.</p>
+                        </article>
+                    </div>
+                    <div class="col-md-4">
+                        <article class="tip-card h-100">
+                            <h3>Usa ramas por tarea</h3>
+                            <p>Separar funcionalidades evita conflictos y mantiene estable la rama principal.</p>
+                        </article>
+                    </div>
                 </div>
             </section>
         </main>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
 </html>
