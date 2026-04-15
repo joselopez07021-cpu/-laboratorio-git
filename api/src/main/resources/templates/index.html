@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git y GitHub</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="page-shell">
+        <header class="hero">
+            <nav class="topbar">
+                <div class="brand">Laboratorio 2</div>
+                <div class="nav-pill">Guia visual de control de versiones</div>
+            </nav>
+
+            <section class="hero-grid">
+                <div class="hero-copy">
+                    <span class="eyebrow">Git + GitHub</span>
+                    <h1>Controla cambios, colabora mejor y publica tu trabajo con confianza.</h1>
+                    <p class="lead">
+                        Git registra la historia de tu proyecto y GitHub la convierte en una
+                        plataforma de trabajo compartido, revision de codigo y publicacion.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a class="button button-primary" href="#conceptos">Ver conceptos</a>
+                        <a class="button button-secondary" href="#flujo">Explorar flujo</a>
+                    </div>
+                </div>
+
+                <aside class="hero-card">
+                    <div class="terminal-bar">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <pre><code>git init
+git add .
+git commit -m "Primer avance"
+git branch -M main
+git remote add origin URL
+git push -u origin main</code></pre>
+                </aside>
+            </section>
+        </header>
+
+        <main class="content">
+            <section class="info-strip">
+                <article>
+                    <strong>Git</strong>
+                    <p>Sistema de control de versiones distribuido para guardar y comparar cambios.</p>
+                </article>
+                <article>
+                    <strong>GitHub</strong>
+                    <p>Plataforma en la nube para alojar repositorios, colaborar y revisar codigo.</p>
+                </article>
+                <article>
+                    <strong>Equipo</strong>
+                    <p>Facilita ramas, fusion de cambios, historial claro y trabajo paralelo.</p>
+                </article>
+            </section>
+
+            <section class="section" id="conceptos">
+                <div class="section-heading">
+                    <span class="section-tag">Conceptos clave</span>
+                    <h2>Lo esencial que debes conocer</h2>
+                </div>
+
+                <div class="card-grid">
+                    <article class="card">
+                        <h3>Repositorio</h3>
+                        <p>Es la carpeta del proyecto con su historial de versiones, ramas y commits.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Commit</h3>
+                        <p>Es una captura de cambios con mensaje descriptivo para dejar evidencia del avance.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Branch</h3>
+                        <p>Permite trabajar nuevas ideas o funciones sin afectar la rama principal.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Pull Request</h3>
+                        <p>En GitHub sirve para proponer cambios, revisarlos y aprobarlos antes de unirlos.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="section" id="flujo">
+                <div class="section-heading">
+                    <span class="section-tag">Flujo recomendado</span>
+                    <h2>Proceso simple para trabajar de forma ordenada</h2>
+                </div>
+
+                <div class="timeline">
+                    <article class="timeline-item">
+                        <span class="step">1</span>
+                        <div>
+                            <h3>Clonar o iniciar</h3>
+                            <p>Crea el repositorio local con <code>git init</code> o descarga uno existente con <code>git clone</code>.</p>
+                        </div>
+                    </article>
+                    <article class="timeline-item">
+                        <span class="step">2</span>
+                        <div>
+                            <h3>Guardar cambios</h3>
+                            <p>Usa <code>git add .</code> y <code>git commit</code> para registrar avances claros y frecuentes.</p>
+                        </div>
+                    </article>
+                    <article class="timeline-item">
+                        <span class="step">3</span>
+                        <div>
+                            <h3>Subir a GitHub</h3>
+                            <p>Con <code>git push</code> publicas tu progreso y mantienes respaldo remoto del proyecto.</p>
+                        </div>
+                    </article>
+                    <article class="timeline-item">
+                        <span class="step">4</span>
+                        <div>
+                            <h3>Revisar y colaborar</h3>
+                            <p>Comparte ramas, abre pull requests y revisa codigo antes de mezclar cambios importantes.</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="section tips">
+                <div class="section-heading">
+                    <span class="section-tag">Buenas practicas</span>
+                    <h2>Consejos para trabajar mejor</h2>
+                </div>
+
+                <div class="tips-grid">
+                    <article class="tip-card">
+                        <h3>Haz commits pequenos</h3>
+                        <p>Es mas facil entender, revisar y revertir cambios cuando cada commit tiene un objetivo claro.</p>
+                    </article>
+                    <article class="tip-card">
+                        <h3>Escribe buenos mensajes</h3>
+                        <p>Un mensaje corto y preciso ayuda a comprender el historial del proyecto rapidamente.</p>
+                    </article>
+                    <article class="tip-card">
+                        <h3>Usa ramas por tarea</h3>
+                        <p>Separar funcionalidades evita conflictos y mantiene estable la rama principal.</p>
+                    </article>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

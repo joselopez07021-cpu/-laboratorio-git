@@ -1,0 +1,60 @@
+GET http://localhost:8080/categories
+###
+GET http://localhost:8080/categories/1
+###
+POST http://localhost:8080/categories
+Content-Type: application/json
+
+{
+"description": "Postres"
+}
+
+###
+POST http://localhost:8080/categories
+Content-Type: application/json
+
+{"description": "Comidas"
+}
+
+###
+PUT http://localhost:8080/categories/1
+Content-Type: application/json
+
+{
+"description": "Bebidas"
+}
+###
+DELETE http://localhost:8080/categories/1
+
+
+
+###
+GET http://localhost:8080/products
+###
+GET http://localhost:8080/products/2
+###
+POST http://localhost:8080/products
+Content-Type: application/json
+
+{
+"description": "Queso Alfredo",
+"price": 10000,
+"category":{
+    "id": 4,
+    "description": "Postres"
+}
+}
+###
+PUT http://localhost:8080/products/17
+Content-Type: application/json
+
+{
+"description": "Coca Cola",
+"price": 12000,
+"category":{
+    "id": 5,
+    "description": "Comidas"
+}
+}
+###
+DELETE http://localhost:8080/products/2
