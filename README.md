@@ -5,8 +5,6 @@ Laboratorio 2, se muestra pagina web informativa sobre GIT. Fomenta la utilizaci
 ## Descripción
 Este laboratorio tiene como objetivo practicar el uso de Git y GitHub, incluyendo el manejo de commits, ramas, merges y control de versiones en un proyecto web.
 
----
-
 ## Comandos utilizados
 
 ### Configuración inicial
