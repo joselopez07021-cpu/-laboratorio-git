@@ -73,3 +73,4 @@ git merge login
 ### Sincronización
 git pull origin main --allow-unrelated-histories
 git push origin main
+
