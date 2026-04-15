@@ -1,5 +1,6 @@
 # -laboratorio-git
-Laboratorio 2, se muestra pagina web informativa sobre GIT. Fomenta la utilización del mismo.
+Laboratorio 2, se muestra pagina web informativa sobre GIT. Fomenta la utilizacion del mismo.
+
 # Laboratorio #2 - Git
 
 ## Descripción
@@ -74,3 +75,74 @@ git merge login
 git pull origin main --allow-unrelated-histories
 git push origin main
 
+## Evidencias
+
+### Creación Login
+![Creación Login](<api/src/main/resources/pantallazos/Creación Login.png>)
+
+### Evidencia GitHub
+![Evidencia GitHub](<api/src/main/resources/pantallazos/evidencia GitHub.png>)
+
+### Gitignore
+![Gitignore](<api/src/main/resources/pantallazos/gitignore.png>)
+
+### Creacion de pagina
+![Creacion de pagina](<api/src/main/resources/pantallazos/Creacion de pagina.png>)
+
+### Primer Commit
+![Primer Commit](<api/src/main/resources/pantallazos/primer commit.png>)
+
+### Evidencia 1
+![Evidencia 1](<api/src/main/resources/pantallazos/evidencia 1.png>)
+
+### Evidencia 2
+![Evidencia 2](<api/src/main/resources/pantallazos/evidencia 2.png>)
+
+### Union de Ramas
+![Union de Ramas](<api/src/main/resources/pantallazos/Union de ramas.png>)
+
+### Evidencia 3
+![Evidencia 3](<api/src/main/resources/pantallazos/evidencia 3.png>)
+
+### Evidencia 4
+![Evidencia 4](<api/src/main/resources/pantallazos/evidencia 4.png>)
+
+### Evidencia 5
+![Evidencia 5](<api/src/main/resources/pantallazos/evidencia 5.png>)
+
+### Evidencia 6
+![Evidencia 6](<api/src/main/resources/pantallazos/evidencia 6.png>)
+
+### Evidencia 7
+![Evidencia 7](<api/src/main/resources/pantallazos/evidencia 7.png>)
+
+### Evidencia 8
+![Evidencia 8](<api/src/main/resources/pantallazos/evidencia 8.png>)
+
+### Evidencia 9
+![Evidencia 9](<api/src/main/resources/pantallazos/evidencia 9.png>)
+
+### Evidencia 10
+![Evidencia 10](<api/src/main/resources/pantallazos/evidencia 10.png>)
+
+### Evidencia 11
+![Evidencia 11](<api/src/main/resources/pantallazos/evidencia 11.png>)
+
+### Evidencia 12
+![Evidencia 12](<api/src/main/resources/pantallazos/evidencia 12.png>)
+
+### Evidencia 13
+![Evidencia 13](<api/src/main/resources/pantallazos/evidencia 13.png>)
+
+### Evidencia 14
+![Evidencia 14](<api/src/main/resources/pantallazos/evidencia 14.png>)
+
+### Evidencia 15
+![Evidencia 15](<api/src/main/resources/pantallazos/evidencia 15.png>)
+
+### Merge
+![Merge](<api/src/main/resources/pantallazos/Merge.png>)
+
+
+### Cambios Finales
+![Cambios Finales](<api/src/main/resources/pantallazos/Cambios Finales.png>)
